@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+<form method="post">
+    {% csrf_token %} <!-- for security reasons -->
+    {{ form.as_p }} <!--render as paragraph tag-->
+    {{rev_form.as_p}}
+    <button type="submit">REGISTER</button>
+</form>
+{% endblock %}
+</body>
+</html>
