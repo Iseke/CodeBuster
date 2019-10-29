@@ -10,7 +10,7 @@ class ReviewerAdmin(admin.ModelAdmin):
 
 @admin.register(Company)
 class CompanyAdmin(admin.ModelAdmin):
-    list_display = ['name', 'address', 'about_info', 'email']
+    list_display = ['id','name', 'address', 'about_info', 'email']
 
 
 @admin.register(Review)
